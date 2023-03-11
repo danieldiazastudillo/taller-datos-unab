@@ -11,7 +11,7 @@ library(VIM) # datos faltantes
 library(mice) # imputación datos faltantes
 
 # read laptop.csv
-laptop <- read.csv("C:\\Users\\daniel.diaz\\Desktop\\taller-datos\\laptop.csv", sep = ",", header = TRUE)
+laptop <- read.csv("C:\\Users\\daniel.diaz\\Desktop\\taller-datos\\laptop.csv", sep = ";", header = TRUE)
 dim(laptop)
 head(laptop)
 str(laptop)
@@ -75,7 +75,7 @@ normality(laptop) %>% flextable()
 
 #Obj-8 | Atipicos (boxplot, boxplot(2-variables))
 
-#detecta
+#detecta atipicos
 diagnose_outlier(laptop) %>% flextable()
 
 # Boxplot Grande
