@@ -39,7 +39,7 @@ corrplot(cor_matrix, method = "ellipse", type = "upper")
 #Regresión lineal múltiple
 
 #dividir datos de entrenamiento y prueba
-set.seed(46)
+set.seed(20)
 selectrows <- sample(1:nrow(laptop), round(0.80 * nrow(laptop)))
 #selectrows <- sample(seq_len(nrow(laptop)), round(0.80 * nrow(laptop)))
 dat_train <- laptop[selectrows, -c(1,2, 3, 4, 9)]
